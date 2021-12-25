@@ -1,6 +1,10 @@
 import "./App.css"
 import React from "react";
 
+import Contador from "./components/contador/Contador";
+import Input from "./components/formulario/Input";
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
+import DiretaPai from "./components/comunicacao/DiretaPai";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
@@ -20,6 +24,22 @@ export default () => (
 
     <div className="Cards">
 
+      <Card titulo="#12 - Contador" color="#a08b4a">
+        <Contador numeroInicial={10}/>
+      </Card>
+
+      <Card titulo="#11 - Componente Controlado (Input - Formulário)" color="#93a0a6">
+        <Input/>
+      </Card>
+
+      <Card titulo="#10 - Comunicação Indireta" color="#eeac60">
+        <IndiretaPai/>
+      </Card>
+
+      <Card titulo="#09 - Comunicação Direta" color="#d5877d">
+        <DiretaPai/>
+      </Card>
+      
       <Card titulo="#08 - Renderização Condicional" color="#59C4C5">
         <ParOuImpar numero={80} />
         <UsuarioInfo usuario={{nome: "Jonatan"}} />

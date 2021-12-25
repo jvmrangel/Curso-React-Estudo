@@ -14,6 +14,6 @@ export default props=>{
     // console.log(alunos)
     return (
         <div>
-            <ul style={{listStyle: "none"}}> {alunosLI}</ul>
+            <ul style={{listStyle: "none"}, {padding:0} }> {alunosLI}</ul>
         </div>)
 }
