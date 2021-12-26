@@ -1,6 +1,9 @@
-import "./App.css"
 import React from "react";
+import "./App.css"
 
+import Card from "./components/layout/Card";
+
+import Mega from "./components/mega/Mega";
 import Contador from "./components/contador/Contador";
 import Input from "./components/formulario/Input";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
@@ -15,7 +18,7 @@ import Primeiro from "./components/basicos/Primeiro";
 import ComParametro from "./components/basicos/ComParametro";
 import Aleatorio from "./components/basicos/Aleatorio";
 import Fragmento from "./components/basicos/Fragmento";
-import Card from "./components/layout/Card";
+
 
 // versão enxuta
 export default () => (
@@ -23,6 +26,10 @@ export default () => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+
+      <Card titulo="#13 - Mega (Gerador de Numeros)" color="#2E4053">
+        <Mega/>
+      </Card>
 
       <Card titulo="#12 - Contador" color="#a08b4a">
         <Contador numeroInicial={10}/>
